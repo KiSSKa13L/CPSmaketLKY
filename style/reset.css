@@ -1,0 +1,102 @@
+/* Сброс стандартных отступов, полей и рамок у всех элементов */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+/* Применение правила box-sizing ко всем элементам, включая псевдоэлементы, для учета отступов и рамок в размерах */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Ссылки */
+/* Убираю подчеркивание у всех ссылок */
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+/* Убираю подчеркивание при наведении на ссылку */
+a:hover {
+    text-decoration: none;
+}
+
+/* Общие стили */
+
+/* Корректное отображение*/
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+/* Сбрасывает шрифты для заголовков и параграфов, чтобы они наследовали значения от родительского элемента */
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Убирает маркеры списка у ul и li */
+ul, ul li {
+    list-style: none;
+}
+
+/* Выравнивает изображения относительно верхнего края */
+img {
+    vertical-align: top;
+}
+
+/* Ограничивает ширину изображения в 100% и обеспечивает корректное масштабирование */
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Сбрасывает курсив */
+address {
+    font-style: normal;
+}
+
+/* Формы */
+/* Наследует шрифты и стили для всех элементов формы от родителей*/
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+/* Убирает фон и тень у кнопок */
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+/* Убирает рамку при фокусе на элементах формы */
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+/* Убирает внутренние отступы у кнопок */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Делает метки кликабельными */
+label {
+    cursor: pointer;
+}
+
+/* Сбрасывает стиль у элемента legend */
+legend {
+    display: block;
+}

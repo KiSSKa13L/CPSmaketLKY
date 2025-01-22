@@ -1,0 +1,327 @@
+body {
+    font-family: 'TT Lakes';
+}
+
+.cps-header__wrapper {
+    display: flex;
+    width: 100%;
+    min-width: 320px; 
+    height: 88px;
+    align-items: center;
+    padding: 24px 16px;
+    border-bottom: thin solid #D9FFF5;
+    background-color: #FFFFFF;
+}
+
+.cps-header-nav {
+    flex-shrink: 0; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+}
+
+.cps-header-logo {
+    margin-right: auto;
+}
+
+.cps-call,
+.cps-chat,
+.cps-profile {
+    display: none;
+}
+
+.cps-header-divider {
+    width: 2px;
+    height: 32px;
+    margin: 0 20px;
+    border: none;
+    border-left: 2px solid #EAEAEA;
+    border-radius: 1px;
+}
+
+.cps-header-nav:not(:last-of-type) {
+    margin-right: 16px;
+}
+
+.cps-burger-icon {
+    background-image: url(../img/svg/burger.svg);
+}
+
+.cps-call-icon { 
+    background-image: url(../img/svg/call.svg);
+}
+
+.cps-chat-icon {
+    background-image: url(../img/svg/chat.svg);
+}
+
+.cps-profile-icon {
+    background-image: url(../img/svg/profile.svg);
+}
+
+.cps-repair-icon {
+    background-image: url(../img/svg/repair.svg);
+}
+
+.cps-status-icon {
+    background-image: url(../img/svg/checkstatus.svg);
+}
+
+.cps-main {
+    background-color: #F8F8F8;
+    padding-top: 20px;
+    height: 100vw; 
+}
+
+.cps-main-title {
+    margin-bottom: 32px;
+    padding-left: 12px;
+    border-left: 5px solid #41F6D7;
+    padding-left: 16px;
+}
+
+.cps-title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+}
+
+.cps-title-buttons {
+    display: none;
+    font-weight: 700;
+}
+.cps-title-button:hover {
+    color: rgb(99, 188, 188);
+}
+
+
+.cps-main-slidemenu-list {
+    margin-top: 24px;
+    margin-left: 16px;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.cps-main-slidemenu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.cps-main-slidemenu-link {
+    padding: 6px 15px;
+    display: inline-block;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: #696c6d;
+}
+
+.cps-main-slidemenu-link:focus,
+.cps-main-slidemenu-link:hover {
+    background-color: #c2ebf6;
+    border-color: solid #B8FFEC;
+    border-radius: 6px;
+    border: 2px;
+}
+
+.cps-main-slidemenu-list-item {
+    flex-shrink: 0;
+}
+
+.cps-repair-brand,
+.cps-repair-device {
+    transition: color 0.3s ease;
+}
+
+.cps-repair-brand:hover,
+.cps-repair-device:hover {
+    color: aqua;
+}
+
+.cps-caption-text {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+}
+
+.cps-caption-text__maintext {
+    height: 90px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    font-size: 14px;
+    width: 288px;
+    overflow: hidden; 
+    width: 100%;
+}
+
+.cps-caption__buttonwrapper {
+    margin-top: 16px;
+}
+
+.cps-caption__expand {
+    width: 132px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 500px;
+    letter-spacing: -0.2px;
+    background-color: #F8F8F8;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    background: url(../img/svg/expand.svg) no-repeat left center;
+}
+
+.cps-caption-imagewrapper {
+    margin-top: 16px;
+}
+
+.cps-caption-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .cps-header {
+        min-width: 768px;
+    }
+
+    .cps-header-divider {
+        display: block; 
+    }
+
+    .cps-call,
+    .cps-chat,
+    .cps-profile {
+        display: block;
+    }
+
+    .cps-main-title {
+        width: 257px;
+        height: 40px;
+        top: 112px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .cps-main-slidemenu {
+        margin-left: 24px;
+    }
+
+    .cps-caption {
+        display: flex;
+        height: 208px; 
+        margin: 30px 24px;
+        gap: 48px;
+    }
+}
+
+.cps-caption-text {
+    flex: 1 1 50%;
+}
+
+.cps-caption-text__maintext {
+    height: 160px;
+    line-height: 20px;
+    overflow: hidden;
+}  
+
+.cps-caption__buttonwrapper {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.cps-caption-imagewrapper {
+    margin: 0;
+    flex: 1 1 50%;
+}
+
+.cps-caption-image {
+    border-radius: 4%;
+}
+
+@media (min-width: 1120px) {
+    .cps-header {
+        display: none;
+    }
+
+    .cps-main {
+        padding-top: 42px;
+    }
+
+    .cps-main-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .cps-title {
+        width: 266px;
+        margin-left: 30px;
+        line-height: 40px;
+        font-size: 28px;
+        letter-spacing: -0.6px;
+        white-space: nowrap; 
+    }
+
+    .cps-title-buttons {
+        display: flex;
+        margin-right: 32px;
+        gap: 32px;
+    }
+
+    .cps-title-button {
+        width: 168px;
+        height: 40px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        background-size: 40px;
+    }
+
+    .cps-repair-icon {
+        background: url(../img/svg/repair.svg) no-repeat right;
+    }
+
+    .cps-status-icon {
+        background: url(../img/svg/profile.svg) no-repeat right;
+    }
+
+    .cps-label {
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+    }
+
+    .cps-main-slidemenu-list {
+        width: 1063px;
+        max-height: 82px;
+        margin-left: 33px;
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+
+    .cps-caption-text {
+        margin-top: 16px;
+        margin-left: 34px;
+    }
+
+    .cps-caption-image {
+        min-width: 532px;
+        min-height: 307px;
+    }
+
+    .cps-caption__expand {
+        margin-top: 14px;
+        margin-left: 5px;
+    }
+}

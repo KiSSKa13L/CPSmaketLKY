@@ -1,0 +1,30 @@
+/*Использование шрифта TT Lakes, если нет, то sans-serif */
+body { 
+  font-family: 'TT Lakes', sans-serif;
+}
+/*Подключение шрифтов */
+@font-face {
+  font-family: 'TT Lakes';
+  src: url("../fonts/TTLakes-Regular.woff2") format('woff2'),
+       url("../fonts/TTLakes-Regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+  
+  @font-face {
+    font-family: 'TT Lakes';
+    src: url("../fonts/TTLakes-Medium.woff") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'TT Lakes';
+    src: url("../fonts/TTLakes-Bold.woff") format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
